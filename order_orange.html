@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ЗАКАЗ АПЕЛЬСИНОВ</title>
+</head>
+<body>
+	<h1>ЗАКАЗАТЬ АПЕЛЬСИНЫ</h1>
+	<table border="1">
+		<thead bgcolor="orange">
+			<tr>
+				<th>Сорт Апельсина</td>
+				<th>Цена за 1 кг</td>
+				<th>Остаток на складе(кг)</td>
+			</tr>
+		</thead>
+		<tbody bgcolor="lightgrey">
+			<tr>
+				<td>Овале Калабрезе</td>
+				<td>120</td>
+				<td>157</td>
+			</tr>
+			<tr>
+				<td>Гамлин</td>
+				<td>150</td>
+				<td>120</td>
+			</tr>
+			<tr>
+				<td>Веленсия</td>
+				<td>100</td>
+				<td>98</td>
+			</tr>
+			<tr>
+				<td>Парсон Браун</td>
+				<td>180</td>
+				<td>119</td>
+			</tr>
+			<tr>
+				<td>Салустиана</td>
+				<td>140</td>
+				<td>173</td>
+			</tr>
+			<tr>
+				<td>Хамлин</td>
+				<td>170</td>
+				<td>118</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<!-- Для теста используем method="GET"-->
+	<form method="GET">
+		<label>Фамилия<input type="text" placeholder="Фамилия" name="lastname"></label>  <!-- текстовое поле -->
+		<br>
+		<label>Имя<input type="text" placeholder="Имя" name="firstname"></label>  <!-- текстовое поле -->
+		<br>
+		<label>Номер телефона<input type="text" name="phone_num" placeholder="+79991234567"></label>  <!-- текстовое поле -->
+		<br>
+		<label>email<input type="email" name="email" placeholder="e@example.com" required=""></label>  <!-- email поле -->
+		<br>
+		<div>
+			<label for="radio-choice-1">Юр. Лицо</label>
+	    	<input type="radio" id="radio-choice-1" name="customer_type" value="ltd" />
+
+	    	<label for="radio-choice-2">Физ. Лицо</label>
+	    	<input type="radio" id="radio-choice-2" name="customer_type" value="personal" />
+		</div>
+	  	<div>
+	    	<label for="payment-type">Способ оплаты:</label>
+	    	<select id="payment-type" name="payment">
+	      		<option value="cash">При получении</option>
+	      		<option value="card">Карта оплаты</option>
+	      		<option value="account">Выставить счет</option>
+	    	</select>
+	  	</div>
+	  	<div>
+	    	<label for="cust_request">Напишите нам:</label><br>
+	    	<textarea cols="30" rows="4" id="cust_request" name="cust_request"></textarea>
+	  	</div>
+		<input type="submit" value="Отправить запрос"></input>
+		<input type="reset"></input>
+	</form>
+	<h6><a href="index.html">На главную</a></h6>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>КОНТАКТЫ</title>
+</head>
+<body>
+	<h2>Мы любим цитрусы</h2>
+	<div style="color:orange">
+		<p>Телефон: +7(999) 123-45-67</p>
+		<p>Адрес: Республика Абхазия</p>
+		<p>Компания: ООО "Оранж"</p>
+
+
+		<span style="color:green">
+			<p>По вопросам о сотрудничестве пишите на email:</p>
+		</span>
+		<p>email: orange@orange.com</p>
+	</div>
+<form method="GET">
+		<label>Фамилия<input type="text" placeholder="Фамилия" name="lastname"></label>  <!-- текстовое поле -->
+		<br>
+		<label>Имя<input type="text" placeholder="Имя" name="firstname"></label>  <!-- текстовое поле -->
+		<br>
+		<label>Номер телефона<input type="text" name="phone_num" placeholder="+79991234567"></label>  <!-- текстовое поле -->
+		<br>
+		<label>email<input type="email" name="email" placeholder="e@example.com" required=""></label>  <!-- email поле -->
+		<br>
+	  	<div>
+	    	<label for="cust_request">Напишите нам:</label><br>
+	    	<textarea cols="30" rows="4" id="cust_request" name="cust_request"></textarea>
+	  	</div>
+		<input type="submit" value="Отправить"></input>
+		<input type="reset"></input>
+	</form>
+	<h6><a href="index.html">На главную</a></h6>
+</body>
+</html>
